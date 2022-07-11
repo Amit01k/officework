@@ -93,6 +93,12 @@
 //when function calll and we give some input like (3,4) so that is called argument.
 
 //rough work of how to work string
-a="100"
-b="10"
-console.log(a+b)
+// a="100"
+// b="10"
+// console.log(a+b)
+
+
+
+
+person=[{ a:"amit",ankit:"sdg"},{c:"sdfgf",d:"dfgfd"}]
+console.log(person[0].a)
