@@ -31,6 +31,11 @@ let arr1=["amit","ankit","rajan"]
 // console.log(arr1)
 // console.log(arr2)
 
+arr1.forEach(element => {
+    console.log(element)
+    
+});
+
 
 
 
