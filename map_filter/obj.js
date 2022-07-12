@@ -45,8 +45,7 @@ console.log(person.filter((x)=>x.age>23))
 
 console.log(person.filter((x)=>x.age>23).map((x)=>x.firstName))//we can use fucntion together like map and filter
 
-
-
+//console.log()
 
 
 

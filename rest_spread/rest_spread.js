@@ -15,10 +15,10 @@ function sum(...theArgs) {
     return total;
 }
 
-console.log(sum(1, 2, 3));
+//console.log(sum(1, 2, 3));
 // expected output: 6
 
-console.log(sum(1, 2, 3, 4));
+//console.log(sum(1, 2, 3, 4));
 // expected output: 10
 
 
@@ -32,4 +32,10 @@ function add(...ele) {
 }
 
 
-console.log(add(1, 2, 3, 5))
+//console.log(add(1, 2, 3, 5))
+
+
+const xyz = [1,4,6,7,9,0,8];
+let [e,f, ...d] = xyz //rest
+console.log(e,f,d)
+console.log(...xyz) //spread
