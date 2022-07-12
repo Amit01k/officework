@@ -34,16 +34,22 @@
 // console.log(arr.map((binary)=>{return binary.toString(2)}))  //change the number in binary
 
 
-const person=[{firstName:"amit",lastName:"kumar",age:"22"},
-{firstName:"ankit",lastName:"kumar",age:"22"},
-{firstName:"rajan",lastName:"kumar",age:"42"},
-{firstName:"rohan",lastName:"kumar",age:"25"}]
+// const person=[{firstName:"amit",lastName:"kumar",age:"22"},
+// {firstName:"ankit",lastName:"kumar",age:"22"},
+// {firstName:"rajan",lastName:"kumar",age:"42"},
+// {firstName:"rohan",lastName:"kumar",age:"25"}]
 
-console.log(person.map((x)=>x.firstName+" "+x.lastName))
 
-console.log(person.filter((x)=>x.age>23))
+// person.forEach((element,index)=> {
+//     console.log(element, index+ "amitfgudufghuifdhgiudfugufdhgudfuigiuf")
+    
+// });
 
-console.log(person.filter((x)=>x.age>23).map((x)=>x.firstName))//we can use fucntion together like map and filter
+// console.log(person.map((x)=>x.firstName+" "+x.lastName))
+
+// console.log(person.filter((x)=>x.age>23))
+
+// console.log(person.filter((x)=>x.age>23).map((x)=>x.firstName))//we can use fucntion together like map , filter and reduce but i used here only map and filter together
 
 //console.log()
 
@@ -84,15 +90,71 @@ console.log(person.filter((x)=>x.age>23).map((x)=>x.firstName))//we can use fucn
 // },0)//here 0 is the initilization value
 // console.log(output)
 
- arr=[2,99,4,5,6,7,34,89]
+//  arr=[2,99,4,5,6,7,34,89]
 
-const higher=arr.reduce((max,curr) =>{
-    if(curr>max){
-        max=curr
+
+// const higher=arr.reduce((max,curr) =>{
+//     if(curr>max){
+//         max=curr
         
+//     }
+//     return max
+// },0)
+// console.log(higher)
+
+// ar=["sadfsd","sdfgvsfd","ads","asdf","asdfdaf"]
+// console.log(ar.filter((x)=>x.length>4))
+
+
+// arr=[2,99,4,5,6,7,34,89]
+// arr.array.forEach(element => {
+
+    
+// });
+
+
+// names=[{fistName:"amit",LastName:"kumar",age:23},
+// {fistName:"ankit",LastName:"kumar",age:13},
+// {fistName:"rajan",LastName:"kumar",age:33}]
+
+
+
+// console.log(names.map((x)=>x.fistName+ " " +x.LastName))
+
+names=[{name:"amit kumar",age:"23"},{name:"ankit kumar",age:"23"}]
+
+// output=names.map((x)=>x.names)
+// console.log(output)
+
+output=names.map(x=>{
+const [first,last]=x.name.split(" ")
+return {
+    first:first,
+    last:last,
+    age:x.age
+}
+})
+//value=output.map((x)=>x.output=`firstnmae ${output[0][0]} lastName ${output[0][1]}`)
+
+// console.log("firstname:" + output[0][0])
+//value=output.map((x)=>)
+//console.log(output[0][0],output[0][1])
+console.log(output)
+
+
+arr=[{name:"amit kumar ",age:12},{name:"ankit kumar",age:123}]
+
+
+output=arr.map((x)=>{
+    const[first,last]= x.name.split(" ")
+    return{
+        first,
+        last,
+        age:x.age
     }
-    return max
-},0)
-console.log(higher)
 
 
+
+})
+
+console.log(output)
