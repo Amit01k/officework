@@ -12,8 +12,8 @@ function *numbers(){
 let iterator = numbers()
 //console.log(iterator)
 console.log(iterator.next())
-console.log(iterator.next())//in the ouput its show false when all number not printed and after some time its show true when all number printed
 console.log(iterator.next())
+console.log(iterator.next())//in the ouput its show false when all number not printed and after some time its show true when all number printed
 console.log(iterator.next())
 console.log(iterator.next())
 
