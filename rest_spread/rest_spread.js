@@ -35,7 +35,24 @@ function add(...ele) {
 //console.log(add(1, 2, 3, 5))
 
 
-const xyz = [1,4,6,7,9,0,8];
-let [e,f, ...d] = xyz //rest
-console.log(e,f,d)
-console.log(...xyz) //spread
+// const xyz = [1,4,6,7,9,0,8];
+
+// let [e,f, ...d] = xyz //rest
+// console.log(e,f,d)
+// console.log(...xyz) //spread
+arr=[1,2,3,4]
+arr1=arr                                      //[5,6,7,8]
+// console.log(arr.concat(...arr1))
+// console.log(arr1)
+function x(){
+    var a=90
+    {
+        let a=90
+        a=90000
+    }
+    console.log(a)
+    //console.log()
+
+
+}
+console.log(x())
