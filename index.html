@@ -19,28 +19,28 @@
                     <td> <input type="radio" name="gender">Mr. <input type="radio" name="gender">Mrs. <input type="radio" name="gender">Ms. </td>
                 <tr>
                 <tr>
-                    <!-- <td><label for="" id="first">First Name</label></td> -->
-                    <td>Full Name <input type="text" placeholder="Full Name" id="first" class="border border-gray-300" required><br> </td>
+                    <td><label for="" >First Name</label></td>
+                    <td> <input type="text" placeholder="Full Name" id="first" class="border border-gray-300" required><br> </td>
                 </tr>
                 <tr>
-                     <!-- <td><label for="" id="last">Last Name</label></td>  -->
-                    <td>Last Name <input type="text" placeholder="Last Name" id="last" class="border border-gray-300 " required><br> </td>
+                     <td><label for="" >Last Name</label></td> 
+                    <td><input type="text" placeholder="Last Name" id="last" class="border border-gray-300 " required><br> </td>
                 </tr>
             
                 
                 <tr>
-                    <!-- <td><label for="">City</label></td> -->
-                    <td>Address <input type="text" id="address" class="border border-gray-300"><br> </td>
+                    <td><label for="">City</label></td>
+                    <td><input type="text" id="address" class="border border-gray-300"><br> </td>
                 </tr>
 
 
                
                 <tr>
-                    <!-- <td><label for="">E-Mail</label></td> -->
-                    <td>E-mail <input type="text" id="mail" class="border  border-gray-300"><br> </td>
+                    <td><label for="">E-Mail</label></td>
+                    <td><input type="text" id="mail" class="border  border-gray-300"><br> </td>
                 </tr>
                 <tr>
-                    <!-- <td><label for="">Mobile</label></td> -->
+                    <td><label for="">Mobile</label></td>
                     <td>Mobile N0. <input type="text" placeholder="+91" id="mobile" class="border border-gray-300"><br> </td>
                 </tr>
 
@@ -59,7 +59,7 @@
             Delete
           </button> -->
     </div>
-    <div class="bg-gray-600">
+    <div class="bg-gray-600 flex justify-between">
          <table >     <!--id="table" -->
             <thead>
                 <tr>
@@ -67,7 +67,7 @@
                     <!-- <th scope="col">item</th> -->
                     <th scope="col">firtName</th>
                     <th scope="col">LastName</th>
-                    <th scope="col">address></th>
+                    <th scope="col">address</th>
                     <th scope="col">mobile</th>
                 </tr>
             </thead>
@@ -75,7 +75,15 @@
                 <tr>
                     <th scope="row">1</th>
                     <td>first</td>
-                    <td>second</td>
+                        <td>Last</td>
+                        <td>Address</td>
+                        <td>Mobile</td>
+                        <!-- <td>second</td> -->
+                        <td class="bg-slate-50 flex justify-end"><button>delete</button></td>
+                        
+                    <!-- <button class="bg-sky-600 hover:bg-sky-700 ...m-4 rounded-md w-24 justify-right">
+                        Delete
+                      </button> -->
                 </tr>
             </tbody>
         </table>
@@ -113,10 +121,10 @@
                     <td>${element [1]}</td>
                     <td>${element [2]}</td>
                     <td>${element [3]}</td>
+                    <td class="bg-slate-50"><button>delete</button></td>
+                    
                 </tr>
-                <button class="bg-sky-600 hover:bg-sky-700 ... m-4  rounded-md w-24">
-            Delete
-          </button>
+               
 
                 `
                 
@@ -131,5 +139,10 @@
     </script>
 
 </body>
+<!-- <div class=flex justify-center mx-12 p-12>
+    <button class="bg-sky-600 hover:bg-sky-700 ...m-4 rounded-md w-24 justify-right">
+Delete
+</button>
+    </div> -->
 
 </html>
