@@ -55,9 +55,9 @@
         <button id="add" class="bg-sky-600 hover:bg-sky-700 ... m-4 p-2 rounded-md ">
             Save changes
           </button>
-          <!-- <button class="bg-sky-600 hover:bg-sky-700 ... m-4 p-2 rounded-md w-24">
-            Delete
-          </button> -->
+          <button onclick="cleared()" class="bg-sky-600 hover:bg-sky-700 ... m-4 p-2 rounded-md w-24">
+            All Delete
+          </button>
     </div>
     <div class="bg-gray-600 flex justify-between">
          <table >     <!--id="table" -->
@@ -91,7 +91,7 @@
 <!-- 
     </form> -->
     <script>
-        function update(){
+        function getAndUpdate(){
             console.log("amit")
             first=document.getElementById("first").value;
             last=document.getElementById("last").value;
@@ -110,6 +110,22 @@
 
 
             }
+            update()
+        }
+        function update(){
+            if(localStorage.getItem("itemJson")==null){
+                itemJsonArray=[]
+                // itemJsonArray.push([first,last,address,mobile])
+                localStorage.setItem("itemJson",JSON.stringify(itemJsonArray))
+            } else{
+                itemJsonArraystr=localStorage.getItem("itemJson")
+                itemJsonArray=JSON.parse(itemJsonArraystr)
+                
+
+
+            }
+           
+            
             table=document.getElementById("table")
             let str=""
             itemJsonArray.forEach((element ,index)=> {
@@ -132,7 +148,7 @@
 
         }
         add=document.getElementById("add");
-        add.addEventListener("click",update)
+        add.addEventListener("click",getAndUpdate)
         update()
 
 
@@ -146,6 +162,10 @@
                 localStorage.setItem("itemJson",JSON.stringify(itemJsonArray));
                 update()
 
+        }
+        function cleared(){
+            localStorage.clear()
+            update()
         }
     </script>
 
