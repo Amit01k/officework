@@ -19,12 +19,12 @@
                     <td> <input type="radio" name="gender">Mr. <input type="radio" name="gender">Mrs. <input type="radio" name="gender">Ms. </td>
                 <tr>
                 <tr>
-                    <td><label for="">First Name</label></td>
-                    <td> <input type="text" placeholder="First Name" class="border border-gray-300" required><br> </td>
+                    <!-- <td><label for="" id="first">First Name</label></td> -->
+                    <td>Full Name <input type="text" placeholder="Full Name" id="first" class="border border-gray-300" required><br> </td>
                 </tr>
                 <tr>
-                    <td><label for="">Last Name</label></td>
-                    <td> <input type="text" placeholder="Last Name" class="border border-gray-300 " required><br> </td>
+                     <!-- <td><label for="" id="last">Last Name</label></td>  -->
+                    <td>Last Name <input type="text" placeholder="Last Name" id="last" class="border border-gray-300 " required><br> </td>
                 </tr>
             
                 
@@ -36,8 +36,8 @@
 
                
                 <tr>
-                    <td><label for="">E-Mail</label></td>
-                    <td> <input type="email" class="border border-gray-300"><br> </td>
+                    <!-- <td><label for="">E-Mail</label></td> -->
+                    <td>E-mail <input type="text" id="mail" class="border  border-gray-300"><br> </td>
                 </tr>
                 <tr>
                     <td><label for="">Mobile</label></td>
@@ -50,16 +50,76 @@
         </form>
         
     </div>
+   
     <div class="flex justify-center">
-        <button class="bg-sky-600 hover:bg-sky-700 ... m-4 p-2 rounded-md ">
+        <button id="add" class="bg-sky-600 hover:bg-sky-700 ... m-4 p-2 rounded-md ">
             Save changes
           </button>
           <button class="bg-sky-600 hover:bg-sky-700 ... m-4 p-2 rounded-md w-24">
             Delete
           </button>
     </div>
+    <div class="bg-gray-600">
+         <table >     <!--id="table" -->
+            <thead>
+                <tr>
+                    <th scope="col">S Np.</th>
+                    <th scope="col">item</th>
+                    <th scope="col">firtName</th>
+                    <th scope="col">LastName</th>
+                </tr>
+            </thead>
+            <tbody id="table">
+                <tr>
+                    <th scope="row">1</th>
+                    <td>first</td>
+                    <td>second</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
 <!-- 
     </form> -->
+    <script>
+        add=document.getElementById("add");
+        add.addEventListener("click",()=>{
+            console.log("amit")
+            first=document.getElementById("first").value;
+            last=document.getElementById("last").value;
+            if(localStorage.getItem("itemJson")==null){
+                itemJsonArray=[]
+                itemJsonArray.push([first,last])
+                localStorage.setItem("itemJson",JSON.stringify(itemJsonArray))
+            }
+            else{
+                itemJsonArraystr=localStorage.getItem("itemJson")
+                itemJsonArray=JSON.parse(itemJsonArraystr)
+                itemJsonArray.push([first,last])
+                localStorage.setItem("itemJson",JSON.stringify(itemJsonArray))
+
+
+            }
+            table=document.getElementById("table")
+            let str=""
+            itemJsonArray.forEach((element ,index)=> {
+                str+=`
+                <tr>
+                    <th scope="row">${index+1}</th>
+                    <td>${element [0]}</td>
+                    <td>${element [1]}</td>
+                </tr>
+
+                `
+                
+            });
+            table.innerHTML=str;
+
+
+
+
+
+        })
+    </script>
 
 </body>
 
