@@ -120,7 +120,7 @@
                     <td>${element [1]}</td>
                     <td>${element [2]}</td>
                     <td>${element [3]}</td>
-                    <td class="bg-slate-50 flex justify-end mx-96"><button>delete</button></td>
+                    <td class="bg-slate-50 flex justify-end mx-96 "><button onclick="deleted(${index})">delete</button></td>
                     
                 </tr>
                
@@ -134,6 +134,19 @@
         add=document.getElementById("add");
         add.addEventListener("click",update)
         update()
+
+
+
+        function deleted(itemindex){
+            console.log("Delete",itemindex)
+            itemJsonArraystr=localStorage.getItem("itemJson")
+                itemJsonArray=JSON.parse(itemJsonArraystr)
+
+                itemJsonArray.splice(itemindex,1)
+                localStorage.setItem("itemJson",JSON.stringify(itemJsonArray));
+                update()
+
+        }
     </script>
 
 </body>
