@@ -14,10 +14,10 @@
         <form class=" ">
             <p class="text-2xl text-center font-bold text-red-500 mb-6 mt-2">CRUD Assignment</p>
             <table class="">
-                <tr>
+                <!-- <tr>
                     <td></td>
                     <td> <input type="radio" name="gender">Mr. <input type="radio" name="gender">Mrs. <input type="radio" name="gender">Ms. </td>
-                <tr>
+                <tr> -->
                 <tr>
                     <td><label for="" >First Name</label></td>
                     <td> <input type="text" placeholder="Full Name" id="first" class="border border-gray-300" required><br> </td>
@@ -40,8 +40,8 @@
                     <td><input type="text" id="mail" class="border  border-gray-300"><br> </td>
                 </tr>
                 <tr>
-                    <td><label for="">Mobile</label></td>
-                    <td>Mobile N0. <input type="text" placeholder="+91" id="mobile" class="border border-gray-300"><br> </td>
+                    <td><label for="">Mobile No.</label></td>
+                    <td><input type="text" placeholder="+91" id="mobile" class="border border-gray-300"><br> </td>
                 </tr>
 
 
@@ -74,12 +74,12 @@
             <tbody id="table">
                 <tr>
                     <th scope="row">1</th>
-                    <td>first</td>
+                    <!-- <td>first</td>
                         <td>Last</td>
                         <td>Address</td>
-                        <td>Mobile</td>
+                        <td>Mobile</td> -->
                         <!-- <td>second</td> -->
-                        <td class="bg-slate-50 flex justify-end mx-96"><button>delete</button></td>
+                        <!-- <td class="bg-slate-50 flex justify-end mx-96"><button>delete</button></td> -->
                         
                     <!-- <button class="bg-sky-600 hover:bg-sky-700 ...m-4 rounded-md w-24 justify-right">
                         Delete
@@ -91,8 +91,7 @@
 <!-- 
     </form> -->
     <script>
-        add=document.getElementById("add");
-        add.addEventListener("click",()=>{
+        function update(){
             console.log("amit")
             first=document.getElementById("first").value;
             last=document.getElementById("last").value;
@@ -131,11 +130,10 @@
             });
             table.innerHTML=str;
 
-
-
-
-
-        })
+        }
+        add=document.getElementById("add");
+        add.addEventListener("click",update)
+        update()
     </script>
 
 </body>
