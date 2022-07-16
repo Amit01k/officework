@@ -29,16 +29,16 @@
             
                 
                 <tr>
-                    <td><label for="">City</label></td>
+                    <td><label for="">Address</label></td>
                     <td><input type="text" id="address" class="border border-gray-300"><br> </td>
                 </tr>
 
 
                
-                <tr>
+                <!-- <tr>
                     <td><label for="">E-Mail</label></td>
                     <td><input type="text" id="mail" class="border  border-gray-300"><br> </td>
-                </tr>
+                </tr> -->
                 <tr>
                     <td><label for="">Mobile No.</label></td>
                     <td><input type="text" placeholder="+91" id="mobile" class="border border-gray-300"><br> </td>
@@ -53,22 +53,22 @@
    
     <div class="flex justify-center">
         <button id="add" class="bg-sky-600 hover:bg-sky-700 ... m-4 p-2 rounded-md ">
-            Save changes
+            Save Changes
           </button>
           <button onclick="cleared()" class="bg-sky-600 hover:bg-sky-700 ... m-4 p-2 rounded-md w-24">
             All Delete
           </button>
     </div>
-    <div class="bg-gray-600 flex justify-between">
-         <table >     <!--id="table" -->
+    <div class="bg-slate-200 flex justify-between">
+         <table class="table-auto">     <!--id="table" -->
             <thead>
-                <tr>
-                    <th scope="col">S Np.</th>
+                <tr class="">
+                    <th scope="col" class="border border-red-800 ">S No.</th>
                     <!-- <th scope="col">item</th> -->
-                    <th scope="col">firtName</th>
-                    <th scope="col">LastName</th>
-                    <th scope="col">address</th>
-                    <th scope="col">mobile</th>
+                    <th scope="col" class="border border-red-800 ">FirtName</th>
+                    <th scope="col" class="border border-red-800 ">LastName</th>
+                    <th scope="col" class="border border-red-800 ">Address</th>
+                    <th scope="col" class="border border-red-800 ">Mobile</th>
                 </tr>
             </thead>
             <tbody id="table">
@@ -136,12 +136,9 @@
                     <td>${element [1]}</td>
                     <td>${element [2]}</td>
                     <td>${element [3]}</td>
-                    <td class="bg-slate-50 flex justify-end mx-96 "><button onclick="deleted(${index})">delete</button></td>
+                    <td class="bg-slate-50 flex justify-end mx-96 "><button onclick="deleted(${index})">Delete</button></td>
                     
-                </tr>
-               
-
-                `
+                </tr>`
                 
             });
             table.innerHTML=str;
