@@ -29,8 +29,8 @@
             
                 
                 <tr>
-                    <td><label for="">City</label></td>
-                    <td> <input type="text" class="border border-gray-300"><br> </td>
+                    <!-- <td><label for="">City</label></td> -->
+                    <td>Address <input type="text" id="address" class="border border-gray-300"><br> </td>
                 </tr>
 
 
@@ -40,8 +40,8 @@
                     <td>E-mail <input type="text" id="mail" class="border  border-gray-300"><br> </td>
                 </tr>
                 <tr>
-                    <td><label for="">Mobile</label></td>
-                    <td> <input type="text" placeholder="+91" class="border border-gray-300"><br> </td>
+                    <!-- <td><label for="">Mobile</label></td> -->
+                    <td>Mobile N0. <input type="text" placeholder="+91" id="mobile" class="border border-gray-300"><br> </td>
                 </tr>
 
 
@@ -55,18 +55,20 @@
         <button id="add" class="bg-sky-600 hover:bg-sky-700 ... m-4 p-2 rounded-md ">
             Save changes
           </button>
-          <button class="bg-sky-600 hover:bg-sky-700 ... m-4 p-2 rounded-md w-24">
+          <!-- <button class="bg-sky-600 hover:bg-sky-700 ... m-4 p-2 rounded-md w-24">
             Delete
-          </button>
+          </button> -->
     </div>
     <div class="bg-gray-600">
          <table >     <!--id="table" -->
             <thead>
                 <tr>
                     <th scope="col">S Np.</th>
-                    <th scope="col">item</th>
+                    <!-- <th scope="col">item</th> -->
                     <th scope="col">firtName</th>
                     <th scope="col">LastName</th>
+                    <th scope="col">address></th>
+                    <th scope="col">mobile</th>
                 </tr>
             </thead>
             <tbody id="table">
@@ -86,15 +88,17 @@
             console.log("amit")
             first=document.getElementById("first").value;
             last=document.getElementById("last").value;
+            address=document.getElementById("address").value;
+            mobile=document.getElementById("mobile").value;
             if(localStorage.getItem("itemJson")==null){
                 itemJsonArray=[]
-                itemJsonArray.push([first,last])
+                itemJsonArray.push([first,last,address,mobile])
                 localStorage.setItem("itemJson",JSON.stringify(itemJsonArray))
             }
             else{
                 itemJsonArraystr=localStorage.getItem("itemJson")
                 itemJsonArray=JSON.parse(itemJsonArraystr)
-                itemJsonArray.push([first,last])
+                itemJsonArray.push([first,last,address,mobile])
                 localStorage.setItem("itemJson",JSON.stringify(itemJsonArray))
 
 
@@ -107,7 +111,12 @@
                     <th scope="row">${index+1}</th>
                     <td>${element [0]}</td>
                     <td>${element [1]}</td>
+                    <td>${element [2]}</td>
+                    <td>${element [3]}</td>
                 </tr>
+                <button class="bg-sky-600 hover:bg-sky-700 ... m-4  rounded-md w-24">
+            Delete
+          </button>
 
                 `
                 
