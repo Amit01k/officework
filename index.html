@@ -35,13 +35,13 @@
 
 
                
-                <!-- <tr>
+                <tr>
                     <td><label for="">E-Mail</label></td>
                     <td><input type="text" id="mail" class="border  border-gray-300"><br> </td>
-                </tr> -->
+                </tr>
                 <tr>
                     <td><label for="">Mobile No.</label></td>
-                    <td><input type="text" placeholder="+91" id="mobile" class="border border-gray-300"><br> </td>
+                    <td><input type="number" placeholder="+91" id="mobile" class="border border-gray-300"><br> </td>
                 </tr>
 
 
@@ -69,6 +69,7 @@
                     <th scope="col" class="border border-red-800 ">LastName</th>
                     <th scope="col" class="border border-red-800 ">Address</th>
                     <th scope="col" class="border border-red-800 ">Mobile</th>
+                    <th scope="col" class="border border-red-800 ">E-mail</th>
                 </tr>
             </thead>
             <tbody id="table">
@@ -97,15 +98,16 @@
             last=document.getElementById("last").value;
             address=document.getElementById("address").value;
             mobile=document.getElementById("mobile").value;
+            mail=document.getElementById("mail").value;
             if(localStorage.getItem("itemJson")==null){
                 itemJsonArray=[]
-                itemJsonArray.push([first,last,address,mobile])
+                itemJsonArray.push([first,last,address,mobile,mail])
                 localStorage.setItem("itemJson",JSON.stringify(itemJsonArray))
             }
             else{
                 itemJsonArraystr=localStorage.getItem("itemJson")
                 itemJsonArray=JSON.parse(itemJsonArraystr)
-                itemJsonArray.push([first,last,address,mobile])
+                itemJsonArray.push([first,last,address,mobile,mail])
                 localStorage.setItem("itemJson",JSON.stringify(itemJsonArray))
 
 
@@ -136,6 +138,7 @@
                     <td>${element [1]}</td>
                     <td>${element [2]}</td>
                     <td>${element [3]}</td>
+                    <td class="mx-10">${element [4]}</td>
                     <td class="bg-slate-50 flex justify-end mx-96 "><button onclick="deleted(${index})">Delete</button></td>
                     
                 </tr>`
