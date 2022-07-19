@@ -1,8 +1,8 @@
 <template>
 <!-- <h2>this is the first component that is created by you  {{"amit".length}}   {{10+20}}</h2>     {{10+30}} this is interpolation -->
 <!-- <h3>e-mail: {{email}}</h3> -->
-<!-- <h2>gameName function {{gateName()}}</h2> -->
-<h2>this is come from gateData   {{gateData("this is come from gateData function")}}</h2>
+<h2>gameName function {{getName()}} : this is come from methods getName     {{getData("this is come from getData function")}}</h2>
+<!-- <h2>this is come from getData :>  {{getData("this is come from getData function")}}</h2> -->
 </template>
 
 
@@ -16,10 +16,10 @@ export default{
         }
     },
     methods:{
-        gateName(){
-            return "amit is the very bad boy"
+        getName(){
+            return "code"
         },
-        gateData(name){
+        getData(name){
             return name
 
         }
