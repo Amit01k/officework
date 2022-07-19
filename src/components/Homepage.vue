@@ -5,6 +5,8 @@
 <h2>gameName function {{getName()}} : this is come from methods getName     {{getData("this is come from getData function")}}   this is third function {{getMailAndName()}}</h2>
 
 
+<h4>{{[1,2,3,4,5,6,7]}}</h4>               <!--use here spread operator and see magic  {{[1,2,3,4,5,6,7]}}-->
+
 <button v-on:click="test()">CLICK ME</button>
 
 <button v-on:click="test2('button 2 clicked')"> button 2 click me</button>
