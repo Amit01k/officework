@@ -3,6 +3,7 @@
     <img alt="Vue logo" src="./assets/logo.png">
     <HelloWorld msg="Welcome to Your Vue.js App"/>
     <page />
+    <amit />
   </div>
 </template>
 
@@ -11,6 +12,8 @@ import HelloWorld from './components/HelloWorld.vue'
 
 import page from './components/Homepage.vue'
 
+import amit from './components/amit.vue'
+
 
 
 export default {
@@ -18,6 +21,7 @@ export default {
   components: {
     HelloWorld,
     page,
+    amit
 
   }
 }
