@@ -2,12 +2,13 @@
 <div>
     <h2>technology</h2>
 <label for="java">java</label>
-<input type="checkbox" value="java" id="java">
+<input type="checkbox" value="java" v-model="technology" id="java">
 
 <label for="Php">Php</label>
-<input type="checkbox" value="Php" id="Php">
+<input type="checkbox" value="Php"  v-model="technology" id="Php">
 <label for="javaScript">javaScript</label>
-<input type="checkbox" value="javaScript" id="javaScript">
+<input type="checkbox" value="javaScript" v-model="technology" id="javaScript">
+<h2>technology:{{technology}}</h2>
 </div>
 
 
@@ -16,7 +17,14 @@
 
 <script>
 export default{
-    name:"BoxPage"
+    name:"BoxPage",
+    data(){
+        return{
+             technology:[]
+        }
+            
+
+    }
 }
 
 </script>
