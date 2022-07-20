@@ -8,7 +8,17 @@
 <input type="checkbox" value="Php"  v-model="technology" id="Php">
 <label for="javaScript">javaScript</label>
 <input type="checkbox" value="javaScript" v-model="technology" id="javaScript">
+
+<br/> <br/>
+<label for="student">student</label>
+<input type="radio" value="student" name="who" v-model="who" id="student">
+
+<label for="developer">developer</label>
+<input type="radio" value="developer" name="who" v-model="who" id="developer">
+
+
 <h2>technology:{{technology}}</h2>
+<h2>i am a {{who}}</h2>
 </div>
 
 
@@ -20,7 +30,8 @@ export default{
     name:"BoxPage",
     data(){
         return{
-             technology:[]
+             technology:[],
+             who:null
         }
             
 

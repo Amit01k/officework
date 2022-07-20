@@ -12,6 +12,7 @@
 <button v-on:click="test2('button 2 clicked')"> button 2 click me</button>
 
 <button v-on:dblclick="double()">bouble click fucntion</button>
+<button v-on:mousemove="mouseMove()">mouse move</button>
 </div>
 <!-- <h2>this is come from getData :>  {{getData("this is come from getData function")}}</h2> -->
 </template>
@@ -57,6 +58,9 @@ export default{
         },
         warn(){
             console.warn("this function call when mouse hover")
+        },
+        mouseMove(){
+            alert("this is come from mouse movedsfgbjdsgbjbf")
         }
     }
    
