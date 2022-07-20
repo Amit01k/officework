@@ -29,7 +29,7 @@ export default{
         return{
             email:null,
             name:null
-        }
+        } 
         // return{
         //     count:100
         // }

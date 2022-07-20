@@ -16,7 +16,9 @@
 
 <label for="developer">developer</label>
 <input type="radio" value="developer" name="who" v-model="who" id="developer">
-
+<ul>
+    <li v-for="item in technology" :key="item">{{item}}</li>
+</ul>
 
 <h2>technology = {{technology}}</h2>
 <h2>i am a {{who}}</h2>

@@ -7,6 +7,7 @@
     <box />
     <ifelse/>
     <loop/>
+    <child msg="hiii amit how are you .What are you doing"  :user="user"  :gatename="gatename"/>
   </div>
 </template>
 
@@ -24,6 +25,8 @@ import ifelse from './components/ifelse.vue'
 
 import loop from './components/forLoop.vue'
 
+import child from './components/child.vue'
+
 
 export default {
   name: 'App',
@@ -33,7 +36,20 @@ export default {
     amit,
     box,
     ifelse,
-    loop
+    loop,
+    child
+
+  },
+  data(){
+    return{
+      user:{name:"Amit Kumar",email:"amit@gmail.com"}
+    }
+  },
+  methods:{
+    gatename(){
+      alert("this is copme from parent function")
+      
+    }
 
   }
 }
