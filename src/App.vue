@@ -5,6 +5,7 @@
     <page />
     <amit />
     <box />
+    <ifelse/>
   </div>
 </template>
 
@@ -18,6 +19,8 @@ import amit from './components/amit.vue'
 
 import box from './components/box.vue'
 
+import ifelse from './components/ifelse.vue'
+
 
 export default {
   name: 'App',
@@ -25,7 +28,8 @@ export default {
     HelloWorld,
     page,
     amit,
-    box
+    box,
+    ifelse
 
   }
 }
