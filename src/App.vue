@@ -6,6 +6,7 @@
     <amit />
     <box />
     <ifelse/>
+    <loop/>
   </div>
 </template>
 
@@ -21,6 +22,8 @@ import box from './components/box.vue'
 
 import ifelse from './components/ifelse.vue'
 
+import loop from './components/forLoop.vue'
+
 
 export default {
   name: 'App',
@@ -29,7 +32,8 @@ export default {
     page,
     amit,
     box,
-    ifelse
+    ifelse,
+    loop
 
   }
 }
@@ -37,11 +41,11 @@ export default {
 
 <style>
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
+  /* font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
+  margin-top: 60px; */
 }
 </style>

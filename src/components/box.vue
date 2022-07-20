@@ -1,5 +1,6 @@
 <template>
 <div>
+    <hr/>
     <h2>technology</h2>
 <label for="java">java</label>
 <input type="checkbox" value="java" v-model="technology" id="java">
@@ -17,7 +18,7 @@
 <input type="radio" value="developer" name="who" v-model="who" id="developer">
 
 
-<h2>technology:{{technology}}</h2>
+<h2>technology = {{technology}}</h2>
 <h2>i am a {{who}}</h2>
 </div>
 

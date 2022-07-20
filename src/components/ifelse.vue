@@ -1,5 +1,6 @@
 <template>
 <div>
+    <hr/>
     <h3 v-if="show">this is come from if condition</h3>
     <h3 v-else>this is come from else</h3>
     <button v-on:click="show=!show">toogle    </button>

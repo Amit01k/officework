@@ -1,6 +1,8 @@
 <template>
+
 <!-- <h2>this is the first component that is created by you  {{"amit".length}}   {{10+20}}</h2>     {{10+30}} this is interpolation -->
 <div>
+    <hr/>
     <h3 v-on:mousemove="warn()">e-mail:</h3>
 <h2>gameName function {{getName()}} : this is come from methods getName     {{getData("this is come from getData function")}}   this is third function {{getMailAndName()}}</h2>
 
@@ -78,6 +80,9 @@ h2{
 }
 button{
     margin: 4px;
+}
+hr{
+    color: red;
 }
 
 
