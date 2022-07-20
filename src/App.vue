@@ -4,6 +4,7 @@
     <HelloWorld msg="Welcome to Your Vue.js App"/>
     <page />
     <amit />
+    <box />
   </div>
 </template>
 
@@ -15,13 +16,16 @@ import page from './components/Homepage.vue'
 import amit from './components/amit.vue'
 
 
+import box from './components/box.vue'
+
 
 export default {
   name: 'App',
   components: {
     HelloWorld,
     page,
-    amit
+    amit,
+    box
 
   }
 }
