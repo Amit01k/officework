@@ -18,7 +18,6 @@ import page from './components/Homepage.vue'
 
 import amit from './components/amit.vue'
 
-
 import box from './components/box.vue'
 
 import ifelse from './components/ifelse.vue'

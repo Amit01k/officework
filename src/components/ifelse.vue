@@ -19,7 +19,7 @@ export default{
     name:"ifElse",
     data(){
         return{
-            show:true,
+            show:false,
             // show2:false
          }
     }
