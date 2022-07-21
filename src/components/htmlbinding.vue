@@ -7,6 +7,7 @@
     <h1 v-html="tags"></h1>  <!--by this way we can use only html code without tag  it print this is come from tag-->
 
     <button v-on:click="getName()"><h2 v-html="button"></h2> </button> <!--something new on line nu 9 -->
+    <button v-on:click="getDate()">show date</button>
 
 
 
@@ -28,6 +29,9 @@ export default{
     methods:{
         getName(){
             alert("this is come from alert with button")
+        },
+        getDate(){
+            alert(Date.now())
         }
     }
 }
