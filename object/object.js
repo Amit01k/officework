@@ -7,7 +7,7 @@ let amit={
 
     }
 }
-amit.name()
+// amit.name()
 
 // console.log(amit.Kumar)
 // //destructuring in object
@@ -15,3 +15,13 @@ amit.name()
 // let {Name,Kumar,Kushwaha}=amit   
 // console.log(Kumar)
 
+const bird = {
+    size: 'small',
+  };
+  
+  const mouse = {
+    name: 'Mickey',
+    small: true,
+  };
+
+  console.log(mouse[bird["name"]])
