@@ -1,12 +1,17 @@
 let amit={
     Name:"Amit",
     Kumar:"naskdnfisdn",
-    Kushwaha:"Kushwaha"
-}
+    Kushwaha:"Kushwaha",
+    name(){
+        console.log(this.Name+" "+this.Kushwaha)
 
-console.log(amit.Kumar)
-//destructuring in object
-//we can destructure the object like below
-let {Name,Kumar,Kushwaha}=amit   
-console.log(Kumar)
+    }
+}
+amit.name()
+
+// console.log(amit.Kumar)
+// //destructuring in object
+// //we can destructure the object like below
+// let {Name,Kumar,Kushwaha}=amit   
+// console.log(Kumar)
 
