@@ -52,5 +52,15 @@ amit={
 }
 
 for (let item in amit) {
-  console.log(item);   //its give index value
+  console.log(item,amit[item]);   //its give index value
 }
+
+
+
+const a = [1 + 2, 1 * 2, 1 / 2];
+//console.log(typeof(a))   //its return type object
+ console.log(a);
+
+
+b=2+3
+console.log(b)
