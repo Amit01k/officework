@@ -25,3 +25,5 @@ const bird = {
   };
 
   console.log(mouse[bird["name"]])
+  console.log("sdnfgjhdsjkfgbdfn")
+  console.log("aerngjhdkufug")
