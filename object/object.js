@@ -24,6 +24,33 @@ const bird = {
     small: true,
   };
 
-  console.log(mouse[bird["name"]])
-  console.log("sdnfgjhdsjkfgbdfn")
-  console.log("aerngjhdkufug")
+  // console.log(mouse[bird["name"]])
+
+
+  const myLifeSummedUp = ['☕', '💻', '🍷', '🍫'];
+
+for (let item in myLifeSummedUp) {
+  console.log("in",item);   //its give index value
+}
+
+for (let item of myLifeSummedUp) {
+  console.log("of",item);  //it is giving value
+}
+console.log("below for in loop on array of object*********************************************")
+
+arr=[{a:"sdnd",b:"sdfgjdf",c:"sdfgdf",d:"sdfjngfd"},{a:"sdnd",b:"sdfgjdf",c:"sdfgdf",d:"sdfjngfd"},{a:"sdnd",b:"sdfgjdf",c:"sdfgdf",d:"sdfjngfd"}]
+
+for(let item of arr){
+  console.log(item)
+}
+
+
+amit={
+  name:"dsfagdsfg",
+  a:"dfnsgndf",
+  b:"sdnfgnidf"
+}
+
+for (let item in amit) {
+  console.log(item);   //its give index value
+}
