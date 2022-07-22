@@ -11,8 +11,8 @@ let amit={
 
 // console.log(amit.Kumar)
 // //destructuring in object
-// //we can destructure the object like below
 // let {Name,Kumar,Kushwaha}=amit   
+// //we can destructure the object like below
 // console.log(Kumar)
 
 const bird = {
@@ -25,3 +25,4 @@ const bird = {
   };
 
   console.log(mouse[bird["name"]])
+console.log("revert msg")
