@@ -1,7 +1,14 @@
 [
   {
-    "name": "",
-    "path": "",
-    "component": "C:\\\\Users\\\\amit.kumar10\\\\Desktop\\\\nuxt\\\\node_modules\\\\@nuxt\\\\vue-app\\\\template\\\\pages\\\\index.vue"
+    "name": "about",
+    "path": "/about",
+    "component": "C:\\\\Users\\\\amit.kumar10\\\\Desktop\\\\nuxt\\\\pages\\\\about.vue",
+    "chunkName": "pages/about"
+  },
+  {
+    "name": "index",
+    "path": "/",
+    "component": "C:\\\\Users\\\\amit.kumar10\\\\Desktop\\\\nuxt\\\\pages\\\\index.vue",
+    "chunkName": "pages/index"
   }
 ]
