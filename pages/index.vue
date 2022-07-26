@@ -1,21 +1,19 @@
+
 <template>
-    <div class="m-4">
-        <nuxt-link to="/about" class="decoration-sky-600">go to another page</nuxt-link>
-        <h1 class="text-blue-800">This is home page</h1>
-        <button type="button" class="bg-gray-900 text-base text-green-500" to="/">click me</button>
-        <!-- <compo/> -->
-        <!-- <h2>hiii{{state.firstName}}</h2> -->
+    <div>
+        <nuxt-link to="/about">go on about page</nuxt-link>
+         <component-data />    <!--we can write file name here to this way to run -->
+        Hello
     </div>
+    <!-- <component-page/> -->
 </template>
 
+<!-- <script setup lang="ts">
+// import componentPage from '../components/component.vue'
 
-<!-- <script >
-
-
-const state=reactive({
-    firstName:"amit",
-    lastName:"Kumae"
-});
-
-
+// definePageMeta({
+//     components:{
+//         componentPage
+//     }
+// });
 </script> -->

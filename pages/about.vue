@@ -1,6 +1,6 @@
 <template>
     <div>
         <nuxt-link to="/">home</nuxt-link>
-    <div>djgbjbfdjgbjdfgbj</div>
+    <div><h2>pages njbjubujbjbnbuihvgctrdtrdrtdc</h2></div>
     </div>
 </template>
