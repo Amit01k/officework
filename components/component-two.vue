@@ -1,7 +1,24 @@
 <template>
 <div>
-    Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse ducimus eveniet consequatur, ipsam odio nulla porro voluptas modi reprehenderit. Facilis sequi, ratione adipisci nostrum soluta velit atque ex odio omnis inventore dolores perspiciatis nam officia sunt eum excepturi sint! Maiores!
+    <div>
+        <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur error quos possimus, sunt at blanditiis accusamus dolorem iusto neque tempora?</h2>
+        <p>{{firstName}}</p>
+        <button @click="name()">click me</button>
+    </div>
 </div>
 
 
 </template>
+
+
+<script setup lang="ts">
+ let firstName="amit"
+
+function name(){
+  let  firstName="kumar"
+  console.log(firstName)
+
+}
+
+
+</script>
