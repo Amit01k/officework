@@ -13,7 +13,11 @@
 
         <counter/>
 
+        <h2>hiii amit what are you doing.?</h2>
+        <p>{{10+10}}</p>
 
+        <nuxt-link to="/nameGenerator">ganeraor</nuxt-link>
+        <!-- <to-do/> -->
 
         <!-- <img src="../public/WIN_20220726_09_38_59_Pro.jpg" alt="this image from public folder">
         <img src="WIN_20220726_09_38_59_Pro.jpg" alt=""> -->
