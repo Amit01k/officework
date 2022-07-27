@@ -1,5 +1,6 @@
 <template>
   <div>
+    <title>nuxt-3 exapmle</title>
     <!-- <nuxt-link to="/about">go to about page</nuxt-link>
     <nuxt-link to="/">home</nuxt-link> -->
     <!-- <h2 class="text-red-800"><nav>this is come from layouts </nav></h2>
@@ -11,7 +12,7 @@
     </ul>
      -->
      <ul>
-        <!-- <li><nuxt-link to="/">home</nuxt-link></li> -->
+        <li><nuxt-link to="/">home</nuxt-link></li>
         <li><nuxt-link to="/about">about page</nuxt-link></li>
         <li><nuxt-link to="/posts">post</nuxt-link></li>
      </ul>

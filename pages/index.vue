@@ -12,6 +12,10 @@
         <component-two/>
 
 
+
+        <img src="../public/WIN_20220726_09_38_59_Pro.jpg" alt="this image from public folder">
+        <img src="" alt="">
+
         
     </div>
     <!-- <component-page/> -->
