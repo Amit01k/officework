@@ -11,10 +11,12 @@
         <h2 class="text-lg text-center">below this come from component two</h2>
         <component-two/>
 
+        <counter/>
 
 
-        <img src="../public/WIN_20220726_09_38_59_Pro.jpg" alt="this image from public folder">
-        <img src="" alt="">
+
+        <!-- <img src="../public/WIN_20220726_09_38_59_Pro.jpg" alt="this image from public folder">
+        <img src="WIN_20220726_09_38_59_Pro.jpg" alt=""> -->
 
         
     </div>
