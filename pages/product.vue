@@ -31,7 +31,7 @@ return {product}
 
 <template>
 <div>
-    <nuxt-link to="createPage">create_product</nuxt-link>
+    <nuxt-link to="createPage" class="text-green-500 bg-red-600">create_product</nuxt-link>
 <!--<router-link :to="{ name: 'ProductCreate'}" class="btn">Add Product</router-link>-->
   <table>
     <thead>
@@ -48,7 +48,7 @@ return {product}
         <td>{{product.title}}</td>
         <td><img :src="product.image" :alt="product.title" width="90" /></td>
         <td>
-          <!-- <Nuxt-link :to="{ name: 'ProductEdit', params: { id: product.id }}" class="btn">Edit</Nuxt-link> -->
+           <router-link :to="{ name: 'ProductEdit', params: { id: product.id }}" class="btn">Edit</router-link> 
           <button @click="del(product.id)" class="btn btn-del">Delete</button>
         </td>
       </tr>
