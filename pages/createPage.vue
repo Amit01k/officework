@@ -2,7 +2,7 @@
 
 <div>
     <form @submit.prevent="submit">
-        <label>title</label>
+        <label class="text-slate-100 bg-red-900" >title</label>
         <input type="text" v-model="title"/>
 
         <label>image</label>
