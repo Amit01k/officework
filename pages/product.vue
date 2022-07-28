@@ -31,6 +31,7 @@ return {product}
 
 <template>
 <div>
+    <nuxt-link to="createPage">create_product</nuxt-link>
 <!--<router-link :to="{ name: 'ProductCreate'}" class="btn">Add Product</router-link>-->
   <table>
     <thead>
