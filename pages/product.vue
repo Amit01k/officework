@@ -31,22 +31,22 @@ return {product}
 
 <template>
 <div>
-    <nuxt-link to="createPage" class="text-green-500 bg-red-600">create_product</nuxt-link>
+    <!-- <nuxt-link to="createPage" class="text-green-500 bg-red-600">create_product</nuxt-link> -->
 <!--<router-link :to="{ name: 'ProductCreate'}" class="btn">Add Product</router-link>-->
-  <table>
-    <thead>
+  <table class="border-separate border border-slate-400 ...">
+    <thead >
       <tr>
-        <th>#id</th>
-        <th>Title</th>
-        <th>Image</th>
-        <th>Actions</th>
+        <th class="border border-slate-300 ... text-center">Sr No. </th>
+        <th class="border border-slate-300 ...">Title</th>
+        <th class="border border-slate-300 ...">Image</th>
+        <th class="border border-slate-300 ...">Actions</th>
       </tr>
     </thead>
     <tbody>
       <tr v-for="product in products" :key="product.id">
-        <td>{{product.id}}</td>
-        <td>{{product.title}}</td>
-        <td><img :src="product.image" :alt="product.title" width="90" /></td>
+        <td class="border border-slate-300 ...">{{product.id}}</td>
+        <td class="border border-slate-300 ...">{{product.title}}</td>
+        <td class="border border-slate-300 ..."><img :src="product.image" :alt="product.title" width="90" /></td>
         <td>
            <router-link :to="{ name: 'ProductEdit', params: { id: product.id }}" class="btn">Edit</router-link> 
           <button @click="del(product.id)" class="btn btn-del">Delete</button>
@@ -54,6 +54,7 @@ return {product}
       </tr>
     </tbody>
   </table>
+  <nuxt-link to="createPage" class="bg-sky-600 hover:bg-sky-700 ... m-10 mt-10 rounded-md w-24">create_product</nuxt-link>
 </div>
 </template>
 
