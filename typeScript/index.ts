@@ -20,3 +20,8 @@
 // let a=["amit","ankit","rajan",3]
 // a[2]=3000
 // console.log(a)
+
+
+
+let b:string[]=["bjfsndnkdf","sdfgidsfg","sdnfgnjkdfngjkdfg"]  //this way be define the array of string
+console.log(b)
