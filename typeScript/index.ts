@@ -13,3 +13,10 @@
 // let a=["amit","ankit","rajan",10]
 // a.push(900)     //here this is not showing error because in the array already present 10 so we can push 900 in the array
 // console.log(a)
+
+
+
+
+// let a=["amit","ankit","rajan",3]
+// a[2]=3000
+// console.log(a)
