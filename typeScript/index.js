@@ -1,4 +1,9 @@
-var a = 10.23;
-console.log(a);
-// let a:boolean=false
+// let a:string=["amit","ankit","rajan"]
+// a.push("sdndsfkgkdfgjkfdjgbj")
 // console.log(a)
+// let a=["amit","ankit","rajan"]
+// a.push(100)   //this show error because in this array hava only string valur to its consider this is string
+// console.log(a)
+var a = ["amit", "ankit", "rajan", 10];
+a.push(900);
+console.log(a);
